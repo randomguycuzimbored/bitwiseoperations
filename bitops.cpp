@@ -11,3 +11,7 @@ unsigned int setBit(unsigned int x, int n){
 unsigned int clearBit(unsigned int x, int n){
     return x & ~(1u << n);
 }
+
+unsigned int toggleBit(unsigned int x, int n){
+    return x ^ (1u << n);
+}
