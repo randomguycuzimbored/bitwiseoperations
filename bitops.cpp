@@ -27,3 +27,6 @@ int countOnes(unsigned int x){
     return count;
 }
 
+bool isPowerOfTwo(unsigned int x){
+    return x != 0 && (x &(x-1))==0;
+}
