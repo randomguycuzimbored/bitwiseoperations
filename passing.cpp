@@ -11,3 +11,12 @@ void swapValues(int& a, int& b) {
     a = b;
     b = temp;
 }
+
+void clampInPlace(int& x, int low, int high) {
+    if (x < low) {
+        x = low;
+    }
+    else if (x > high) {
+        x = high;
+    }
+}
