@@ -20,3 +20,14 @@ void clampInPlace(int& x, int low, int high) {
         x = high;
     }
 }
+
+bool divide(int dividend, int divisor, int& quotient, int& remainder) {
+    if (divisor == 0) {
+        return false;
+    }
+
+    quotient = dividend / divisor;
+    remainder = dividend % divisor;
+
+    return true;
+}
