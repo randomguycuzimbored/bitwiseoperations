@@ -31,3 +31,15 @@ bool divide(int dividend, int divisor, int& quotient, int& remainder) {
 
     return true;
 }
+
+void sortThree(int& a, int& b, int& c) {
+    if (a > b) {
+        swapValues(a, b);
+    }
+    if (b > c) {
+        swapValues(b, c);
+    }
+    if (a > b) {
+        swapValues(a, b);
+    }
+}
